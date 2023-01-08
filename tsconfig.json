@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node", //node环境
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
+    },
+    "experimentalDecorators": true,
+    "declaration": true
+  },
+  "include": [
+    "typings.d.ts", //配置的.d.ts文件,
+    "./src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}
